@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>스파르타코딩클럽 | 로그인페이</title>
+        <style>
+            /* 1. 전체 선택자*/
+            * {
+                margin: 0;
+                text-decoration: none;
+            }
+            /* 2. 태그 선택자: 해당하는 모든 태그를 지칭 */
+            p {
+                background: yellowgreen;
+                color: darkgreen;
+            }
+            /* class1 클래스를 가진 모든 태그를 지칭 */
+            /* 케이스1에 적용됩니다. */
+            .class1 {
+                background: yellowgreen;
+                color: darkgreen;
+            }
+            /* div 태그 중 class2 클래스를 가진 태그만 지칭 */
+            /* 케이스3에만 적용됩니다. 케이스2는 p 태그이므로, 적용되지 않습니다.*/
+            div.class2 {
+                background: darkgreen;
+                color: yellowgreen;
+            }
+            .class3 > h1 {
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>태그 선택자(Type Selector)</p>
+        <p class="class1">케이스1</p>
+        <p class="class2">케이스2</p>
+        <div class="class2">케이스3</div>
+        <div class="class3"><h1>케이스4</h1></div>
+    </body>
+
+</html>
